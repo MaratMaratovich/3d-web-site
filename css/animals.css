@@ -1,0 +1,75 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: exo_2;
+	src: url(../fonts/exo-2-v20-cyrillic_cyrillic-ext-300.woff2);
+	font-weight: 300;
+}
+@font-face {
+	font-family: exo_2;
+	src: url(../fonts/exo-2-v20-cyrillic_cyrillic-ext-100.woff2);
+	font-weight: 100;
+}
+
+html, body {
+	font-family: exo_2, sans-serif;
+	height: 100%;
+	background-color: #000;
+}
+:root {
+	--transition: 1.75s cubic-bezier(.2, .6, 0, 1);
+}
+.slider {
+	height: 100%;
+}
+.slider__layer {
+	position: absolute;
+	inset: 0;
+	background-size: cover;
+	background-position: center;
+	will-change: transform;
+	/* transition: var(--transition)!important; не забудь Ерсаин!*/
+}
+.slider__layer::before {
+	content: '';
+	position: absolute;
+	inset: 0;
+	z-index: 1;
+	box-shadow: inset 0 0 250px rgb(0 0 0 / .3);
+}
+.slider__item {
+	overflow: hidden;
+}
+.slider__wrapper {
+	will-change: transform;
+	transform-style: preserve-3d;
+	/* transition: var(--transition)!important; */
+}
+
+.swiper-slide{
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+.main{
+	flex: 1 1 auto;
+}
+
+
+.button{
+	background-color: rgba(16, 140, 156, 0.2);
+	position: relative;
+	z-index: 5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-decoration: none;
+	color: #fff;
+}
