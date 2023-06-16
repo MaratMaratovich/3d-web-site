@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Document</title>
+
+	<link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
+	<script src="libs/swiper/swiper-bundle.min.js" defer></script>
+	<script src="libs/particles/particles.js" defer></script>
+
+	<link rel="stylesheet" href="css/animals.css">
+	<link rel="stylesheet" href="css/header.css">
+	<script src="js/animals.js" defer></script>
+
+</head>
+<body>
+
+	<header class="header">
+        <div class="wrapper">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <a href="/index.html" class="header__logo-link">
+                        <img src="./img/svg/iconlogowhite 1.svg" alt="Откройте для себя удивительные места в Казахстане" class="header__logo-pic">
+                    </a>
+                </div>
+    
+                <nav class="header__nav">
+                    <ul class="header__list">
+						<li class="header__item">
+							<a href="/slider.html" class="header__link js-scroll">Слайдер</a>
+						</li>
+						<li class="header__item">
+							<a href="/animals.html" class="header__link js-scroll">Животные</a>
+						</li>
+						<li class="header__item">
+							<a href="/landscapes.html" class="header__link js-scroll">Места</a>
+						</li>
+						<li class="header__item">
+							<a href="/info.html" class="header__link">О сайте</a>
+						</li>
+						<li class="header__item">
+							<a href="/exit.php" class="header__link">Выйти</a>
+						</li>
+                    </ul>
+                    <div class="header__nav-close">
+                        <span class="header__nav-close-line"></span>
+                        <span class="header__nav-close-line"></span>
+                    </div>
+                </nav>
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+	<div class="swiper slider">
+		<div class="swiper-wrapper slider__wrapper">
+
+			<div class="swiper-slide slider__item">
+				<main class="main">
+					<div class="slider__layer" data-swiper-parallax="55%" style="background-image: url(img/landscapes/screen-1/layer-back.jpg);"></div>
+					<div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(img/landscapes/screen-1/layer-middle.png);"></div>
+					<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#BE9164"></canvas>
+					<div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(img/landscapes/screen-1/layer-front.png);"></div>
+				</main>
+				<footer class="footer">
+					<a href="info/ls-info/1.html" class="button">Далее...</a>
+				</footer>
+			</div>
+
+			<div class="swiper-slide slider__item">
+				<main class="main">
+					<div class="slider__layer" data-swiper-parallax="40%" style="background-image: url(img/animals/screen-2/layer-back.jpg);"></div>
+					<div class="slider__layer" data-swiper-parallax="30%" style="background-image: url(img/animals/screen-2/layer-middle.png);"></div>
+					<canvas class="particles slider__layer" data-swiper-parallax="20%" data-color="#525A6D"></canvas>
+					<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(img/animals/screen-2/layer-front.png);"></div>
+				</main>
+				<footer class="footer">
+					<a href="!#" class="button">Далее...</a>
+				</footer>
+			</div>
+
+			<div class="swiper-slide slider__item">
+				<main class="main">
+					<div class="slider__layer" data-swiper-parallax="48%" style="background-image: url(img/animals/screen-3/layer-back.jpg);"></div>
+					<div class="slider__layer" data-swiper-parallax="35%" style="background-image: url(img/animals/screen-3/layer-middle.png);"></div>
+					<canvas class="particles slider__layer" data-swiper-parallax="25%" data-color="#938086"></canvas>
+					<div class="slider__layer" data-swiper-parallax="16%" style="background-image: url(img/animals/screen-3/layer-front.png);"></div>
+				</main>
+				<footer class="footer">
+					<a href="!#" class="button">Далее...</a>
+				</footer>
+			</div>
+
+			<div class="swiper-slide slider__item">
+				<main class="main">
+					<div class="slider__layer" data-swiper-parallax="55%" style="background-image: url(img/animals/screen-4/layer-back.jpg);"></div>
+					<div class="slider__layer" data-swiper-parallax="25%" style="background-image: url(img/animals/screen-4/layer-middle.png);"></div>
+					<canvas class="particles slider__layer" data-swiper-parallax="18%" data-color="#BE9164"></canvas>
+					<div class="slider__layer" data-swiper-parallax="14%" style="background-image: url(img/animals/screen-4/layer-front.png);"></div>
+				</main>
+				<footer class="footer">
+					<a href="!#" class="button">Далее...</a>
+				</footer>
+			</div>
+
+		</div>
+	</div>
+	
+</body>
+</html>
